@@ -17,7 +17,6 @@ import javax.annotation.Nullable;
  * email：bjay20080613@qq.com
  */
 public class ToastModule  extends ReactContextBaseJavaModule {
-    private static final String TAG="ToastModule";
     private static final String DURATION_SHORT_KEY="SHORT";
     private static final String DURATION_LONG_KEY="LONG";
     public ToastModule(ReactApplicationContext reactContext) {

@@ -11,8 +11,9 @@ import {
   Text,
   View
 } from 'react-native';
-//
 
+
+//从android.js中导入
 import ToastExample from './android';
 
 const instructions = Platform.select({
@@ -27,6 +28,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        //调用
         <Text style={styles.welcome} onPress={()=>ToastExample.show("js中点的啊",ToastExample.SHORT)}>
          调用原生Toast!
         </Text>
