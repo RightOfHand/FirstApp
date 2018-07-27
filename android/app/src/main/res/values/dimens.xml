@@ -1,0 +1,117 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="text_micro_little">8sp</dimen>
+    <dimen name="text_micro_more">9sp</dimen>
+    <dimen name="text_mini_more">10sp</dimen>
+    <dimen name="text_nn">11sp</dimen>
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_mini">13sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_petty">15sp</dimen>
+    <dimen name="text_lesser">15sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_normal_major">18sp</dimen>
+    <dimen name="text_middle">20sp</dimen>
+    <dimen name="text_middle_major">23sp</dimen>
+    <dimen name="text_big">25sp</dimen>
+
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_larger">22sp</dimen>
+    <dimen name="text_super">26sp</dimen>
+    <dimen name="text_huge">32sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="divider_nm">0.5dp</dimen>
+    <dimen name="margin_grid">2.5dp</dimen>
+    <dimen name="margin_mini">5dp</dimen>
+    <dimen name="margin_small">7dp</dimen>
+    <dimen name="progress_line">11dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_normal_major">13dp</dimen>
+    <dimen name="margin_middle">15dp</dimen>
+    <dimen name="margin_middle_normal">16dp</dimen>
+    <dimen name="margin_middle_major">17dp</dimen>
+
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_bigger">26dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+    <dimen name="margin_larger">31dp</dimen>
+    <dimen name="margin_super">56dp</dimen>
+    <dimen name="margin_huge">72dp</dimen>
+    <dimen name="margin_huge_more">260dp</dimen>
+    <dimen name="margin_huge_more_little">130dp</dimen>
+
+    <dimen name="label_mini">9sp</dimen>
+    <dimen name="label_small">10sp</dimen>
+    <dimen name="label_normal">12sp</dimen>
+    <dimen name="label_big">13sp</dimen>
+
+    <dimen name="edit_height">200dp</dimen>
+
+    <dimen name="tool_bar_height">44dp</dimen>
+    <dimen name="tab_height">45dp</dimen>
+    <dimen name="tab_height_small">38dp</dimen>
+    <dimen name="campus_header_height">46dp</dimen>
+
+    <dimen name="label_height">44dp</dimen>
+    <dimen name="label_height_big">60dp</dimen>
+
+    <!-- 上传凭证GridView中图片的大小-->
+    <dimen name="local_album_graph_size">100dp</dimen>
+    <!-- 本地相册GridView 相片间隔-->
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="image_size">80dp</dimen>
+    <dimen name="folder_cover_size">36dp</dimen>
+    <dimen name="multi_image_footer_height">50dp</dimen>
+    <dimen name="image_height">180dp</dimen>
+    <dimen name="gallery_size">75dp</dimen>
+    <dimen name="half_divider">0.5dp</dimen>
+
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="inner_margin">8dp</dimen>
+    <dimen name="btn_height_nn">30dp</dimen>
+    <dimen name="btn_height_mini">36dp</dimen>
+    <dimen name="btn_height_small">40dp</dimen>
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="btn_height_big">48dp</dimen>
+    <dimen name="top_btn_margin_top">54dp</dimen>
+    <dimen name="btn_margin_top">15dp</dimen>
+    <dimen name="scan_btn_margin">55dp</dimen>
+
+    <dimen name="right_text_minwidth">60dp</dimen>
+
+
+    <dimen name="ic_height_small">22dp</dimen>
+    <dimen name="ic_height_normal">30dp</dimen>
+    <dimen name="progress_sub_height">32dp</dimen>
+    <dimen name="ic_height_normal_major">33dp</dimen>
+    <dimen name="ic_height_middle">35dp</dimen>
+    <dimen name="ic_height_middle_major">38dp</dimen>
+    <dimen name="ic_height_big">44dp</dimen>
+
+    <dimen name="sao_yi_sao">250dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="mine_score_height">64dp</dimen>
+    <dimen name="homepage_scere_height">56dp</dimen>
+
+
+    <dimen name="WheelItemTextSize">24sp</dimen>
+    <dimen name="WheelTextSize">17sp</dimen>
+    <dimen name="WheelItemSpace">12dp</dimen>
+    <dimen name="WheelIndicatorSize">0.5dp</dimen>
+    <dimen name="WheelMargins">4dp</dimen>
+
+    <dimen name="toolbar_padding_top">0dp</dimen>
+
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_276dp">276dp</dimen>
+    <dimen name="dimen_280dp">280dp</dimen>
+
+    <dimen name="campus_title_width">75dp</dimen>
+    <dimen name="campus_title_height">30dp</dimen>
+
+</resources>

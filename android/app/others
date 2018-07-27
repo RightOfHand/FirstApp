@@ -1,0 +1,52 @@
+  2.CallBack
+   //native层
+   @ReactMethod
+    public void callNativeMethod(String msg, Callback callback) {
+
+        // 1.处理业务逻辑...
+        String result = "native result:" + msg;
+        // 2.回调RN,即将处理结果返回给RN
+        callback.invoke(result);
+    }
+
+    //JS
+      callbackNative(msg) {
+            NativeModules.ImagePickerModule.callNativeMethod(msg,(result) => {
+                 ToastAndroid.show("CallBack accept:" + result, ToastAndroid.SHORT);
+            })
+        }
+
+   3.Promise
+       //native
+       @ReactMethod
+         public void callNativeMethod(String msg, Promise promise) {
+
+             // 1.处理业务逻辑...
+             String result = "处理结果：" + msg;
+             // 2.回调RN,即将处理结果返回给RN
+             promise.resolve(result);
+         }
+       //JS
+        promiseNative(msg) {
+               NativeModules.ImagePickerModule.callNativeMethod(msg).then(
+                   (result) =>{
+                       ToastAndroid.show("Promise accept:" + result, ToastAndroid.SHORT)
+                   }
+               ).catch((error) =>{console.log(error)});
+           }
+
+   4.直接传常量
+   //native
+   @Nullable
+       @Override
+       public Map<String, Object> getConstants() {
+           return super.getConstants();
+       }
+
+    //js
+    componentWillMount() {
+    	let result = NativeModules.ImagePickerModule."key"
+    }
+
+
+

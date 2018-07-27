@@ -15,13 +15,16 @@ import java.util.List;
  * email：bjay20080613@qq.com
  */
 public class ImagePickerPackage implements ReactPackage {
+    public ImagePickerModule mPickerModule;
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules=new ArrayList<>();
-        modules.add(new ImagePickerModule(reactContext));
+        mPickerModule=new ImagePickerModule(reactContext);
+        modules.add(mPickerModule);
         return modules;
     }
+
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {

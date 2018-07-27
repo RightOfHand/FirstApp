@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="130dp"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3.3dp"
+            android:background="@drawable/dialog_top" />
+
+        <RelativeLayout
+            android:id="@+id/dialog_title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height">
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/dialog_title"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Hello World!!!"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:id="@+id/dialog_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="100dp"
+                android:gravity="left"
+                android:padding="@dimen/margin_normal"
+                android:textSize="@dimen/text_normal"
+                android:text="内容"
+                android:textColor="@color/black"/>
+        </ScrollView>
+
+        <View
+            android:id="@+id/top_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/dialog_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_btn_left"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_left"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal" />
+            <View
+                android:id="@+id/left_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>
+            <Button
+                android:id="@+id/dialog_btn"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn"
+                android:text="确定"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_normal" />
+            <View
+                android:id="@+id/right_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>
+            <Button
+                android:id="@+id/dialog_btn_right"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_right"
+                android:text="确定"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

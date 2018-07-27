@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#407de3</color>
+    <color name="blue_schedule">#4396c1</color>
+    <color name="blue_schedule_unable">#7b4396c1</color>
+    <color name="blue_light">#407ee4</color>
+    <color name="blue_low">#50B1FE</color>
+    <color name="blue_pressed">#0570a3</color>
+    <color name="blue_title">#2171A9</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_two">#00ffffff</color>
+    <color name="transparent_half">#e0000000</color>
+    <color name="red">#f43531</color>
+
+    <color name="text_navigator">#232928</color>
+    <color name="text_dark">#333333</color>
+    <color name="text_normal">#798180</color>
+    <color name="text_light">#bac3c1</color>
+    <color name="text_hint">#bac3c1</color>
+
+    <color name="time">#e0e0e0</color>
+    <color name="green">#40c1ac</color>
+    <color name="green_little">#2540c1ac</color>
+    <color name="blue_select">#2540c1ac</color>
+    <color name="green_progress">#43c2aa</color>
+    <color name="green_alpha">#e640c1ac</color>
+    <color name="green_deep">#33b49f</color>
+    <color name="green_tab">#3fc2ab</color>
+    <color name="green_light">#89dacd</color>
+    <color name="green_alpha_half">#8040c1ac</color>
+    <color name="green_click">#37c2ac</color>
+
+    <color name="green_transparent">#8040c1ac</color>
+
+
+    <color name="dark">#232928</color>
+    <color name="light_dark">#58575c</color>
+    <color name="dark_deep">#000000</color>
+    <color name="dark_light">#bac3c1</color>
+    <color name="dark_trans">#99000000</color>
+    <color name="black">#000000</color>
+
+    <color name="deep_black">#aa000000</color>
+    <color name="normal_black">#8a000000</color>
+    <color name="little_black">#3a000000</color>
+
+    <color name="text_gray">#666666</color>
+    <color name="text_gray_one">#555555</color>
+
+    <color name="divider">#f0f0f0</color>
+    <color name="background">#f0f0f0</color>
+
+    <color name="schedule_left_color">#eff0f4</color>
+
+    <color name="background_little">#a0f0f0f0</color>
+    <color name="background_light">#f7f7f7</color>
+    <color name="background_qrcode">#606060</color>
+    <color name="white">#ffffff</color>
+    <color name="white_alpha_half">#80ffffff</color>
+    <color name="home_background">#666666</color>
+    <color name="gray_half_transparent">#8bffffff</color>
+    <color name="black_half_transparent">#6bf7f7f7</color>
+    <color name="gray">#bbbbbb</color>
+    <color name="gray_select">#a0b4b4b4</color>
+    <color name="gray_light">#484848</color>
+    <color name="gray_little">#40b4b4b4</color>
+    <color name="gray_dark">#FFECECEC</color>
+
+    <color name="pressed_color">#e0e0e0</color>
+
+    <color name="text_gray_light">#999999</color>
+    <color name="schedule_background">#f7f8fa</color>
+    <color name="schedule_divider">#eae8e7</color>
+
+    <color name="orange">#FFFF8600</color>
+    <color name="orange_msg">#feb528</color>
+    <color name="orange_team">#FEA018</color>
+    <color name="orange_evaluate">#FFBF13</color>
+    <color name="orange_consult">#fdc143</color>
+    <color name="color_default">#e8e8e8</color>
+    <color name="color_status">#fd8043</color>
+
+
+</resources>

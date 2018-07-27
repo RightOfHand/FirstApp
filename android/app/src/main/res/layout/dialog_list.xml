@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/touch_outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/shape_white"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/dialog_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="1px"
+            android:divider="@color/gray"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_cancel"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_white_selector"
+        android:text="@string/cancel"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_grid"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_height="@dimen/btn_height" />
+
+</FrameLayout>
+
+

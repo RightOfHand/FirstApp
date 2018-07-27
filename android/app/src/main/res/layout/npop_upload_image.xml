@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.3dp"
+        android:background="@drawable/shadow"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/list_item_selector"
+            android:layout_marginTop="@dimen/half_divider"
+            android:text="拍照"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_dark"/>
+
+        <Button
+            android:id="@+id/btn_album"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/list_item_selector"
+            android:text="手机相册"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="@dimen/half_divider"
+            android:textColor="@color/text_dark"/>
+
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginTop="0.3dp"
+            android:background="@drawable/list_item_selector"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_dark" />
+    </LinearLayout>
+
+</LinearLayout>
