@@ -10,6 +10,8 @@ import {
     AsyncStorage,
     PixelRatio,
     processColor,
+    UIManager,
+    findNodeHandle
 } from 'react-native';
 
 
@@ -17,6 +19,7 @@ import TextInputWidget from '../widget/TextInputWidget.js';
 import TextTipsWidget from '../widget/TextTipsWidget';
 import TextImageWidget from '../widget/TextImageWidget.js';
 import Circle from '../widget/NativeCircle'
+import UpdateAndroid from '../native_modules/UpdateAndroid'
 
 
 
@@ -29,15 +32,15 @@ export default class UserInfoScreen extends Component<Props>{
 
     });
     lastBackPressed = 0;
-    componentWillMount() {
-        if (Platform.OS === 'android') {
-            // BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid);
-        }
-    }
-    componentWillUnmount() {
-        if (Platform.OS === 'android') {
-            // BackHandler.removeEventListener('hardwareBackPress', this.onBackAndroid);
-        }
+    componentDidMount() {
+    //     if (Platform.OS === 'android') {
+    //         // BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid);
+    //     }
+    // }
+    // componentWillUnmount() {
+    //     if (Platform.OS === 'android') {
+    //         // BackHandler.removeEventListener('hardwareBackPress', this.onBackAndroid);
+    //     }
     }
     onBackAndroid = () => {
         const {navigator}=this.props;
@@ -65,11 +68,33 @@ export default class UserInfoScreen extends Component<Props>{
         super(props);
     }
 
+    _update(){
+        UpdateAndroid.doUpdate('index.android.bundle_2.0', (progress)=> {
+            let pro = Number.parseFloat('' + progress);
+            if (pro >= 100) {
+                this.setState({
+                    modalVisible: false,
+                    currProgress: 100
+                });
+            } else {
+                this.setState({
+                    currProgress: pro
+                });
+            }
+        });
+    }
+    _onSend(){
+        this.circle.handleTask();
+    }
     render() {
         const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-
+                {/*<View>*/}
+                    {/*<Text  style={styles.rowContainer} onPress={()=>this._update()}>*/}
+                        {/*reload update*/}
+                    {/*</Text>*/}
+                {/*</View>*/}
                 <TextImageWidget
                     title='* 头像' />
 
@@ -82,17 +107,23 @@ export default class UserInfoScreen extends Component<Props>{
                 <TextTipsWidget
                     title='* 生日' tips='请选择'/>
                 <View style={styles.rowContainer}>
-                    <Circle style={{width: 100, height: 100}}
+
+                    <Circle ref={(circle)=>{this.circle = circle}}
+                            style={{width: 100, height: 100}}
                             color={processColor("#f45675")}
                             radius={50}
                             onClick={(msg)=>Alert.alert("js press",msg)}/>
                 </View>
                 <View>
-                    {/*<Text  style={styles.textTitle} onPress={()=>this.onSendCommand()}>*/}
-                        {/*send task*/}
-                    {/*</Text>*/}
+                    <Text  style={styles.rowContainer} onPress={()=>this._onSend()}>
+                        send task
+                    </Text>
                 </View>
-
+                <View>
+                    <Text  style={styles.rowContainer} onPress={()=>this._update()}>
+                        send task
+                    </Text>
+                </View>
             </View>
         );
     }
@@ -100,6 +131,11 @@ export default class UserInfoScreen extends Component<Props>{
 }
 
 const styles = StyleSheet.create({
+    rowContainer: {
+        backgroundColor: '#FFF',
+        width:200,
+        fontSize: 18,
+    },
     container: {
         flex: 1,
         marginTop:20, //去除状态栏图标

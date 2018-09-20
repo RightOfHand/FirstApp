@@ -31,6 +31,7 @@
       </activity>
         <activity android:name=".activity.FirstNativeActivity"/>
         <activity android:name=".activity.SecondActivity"/>
+        <activity android:name=".activity.ToRNActivity"/>
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.fileProvider"

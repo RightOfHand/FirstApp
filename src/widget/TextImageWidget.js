@@ -46,7 +46,6 @@ export default class TextImageWidget extends Component{
             <View style={styles.rowContainer}>
                 <View style={styles.row}>
                     <Text
-                        numberOfLines={1}
                         style={styles.textInputTitle} onPress={()=>this.promiseNative("原生跳用")}>
                         {this.props.title}
                     </Text>

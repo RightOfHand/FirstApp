@@ -39,11 +39,11 @@ export default class PermissionScreen extends Component<Props> {
         }
     }
 
-    componentWillMount(){
-        if (Platform.OS === 'android') {
-            BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid)
-        }
-    }
+    // componentWillMount(){
+    //     if (Platform.OS === 'android') {
+    //         BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid)
+    //     }
+    // }
     componentWillUnmount() {
         AppState.removeEventListener('change', this._handleAppStateChange)
         if (Platform.OS === 'android') {

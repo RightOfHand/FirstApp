@@ -15,12 +15,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.facebook.react.ReactActivity;
-import com.facebook.react.ReactActivityDelegate;
-import com.facebook.react.ReactRootView;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.modules.core.PermissionListener;
-import com.firstapp.activity.FirstNativeActivity;
-import com.firstapp.constant.ExtraKeys;
 import com.firstapp.service.MyTaskService;
 import com.firstapp.util.FileUtils;
 import com.firstapp.widget.dialog.Dialogs;
@@ -30,7 +26,6 @@ import com.firstapp.widget.pop.TextListPop;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.annotation.Nullable;

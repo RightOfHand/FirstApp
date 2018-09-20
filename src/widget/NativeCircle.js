@@ -8,7 +8,7 @@ import {
 import {PropTypes} from 'prop-types'
 import MCircle from '../native_modules/Circle'
 
-var RCT_CICLE_REF='MCircle'
+var RCT_CIRCLE_REF='MCircle'
 export default class Circle extends Component {
 
     static propTypes = {
@@ -32,7 +32,7 @@ export default class Circle extends Component {
         //向native层发送命令
         // noinspection JSDeprecatedSymbols
         UIManager.dispatchViewManagerCommand(
-            findNodeHandle(this.refs[RCT_CICLE_REF]),
+            findNodeHandle(this.refs[RCT_CIRCLE_REF]),
             UIManager.MCircle.Commands.handleTask,
             null)
     }
@@ -43,7 +43,7 @@ export default class Circle extends Component {
         return (
             <View>
                 <MCircle
-                    ref={RCT_CICLE_REF}
+                    ref={RCT_CIRCLE_REF}
                     style={style}
                     radius={radius}
                     color={color}

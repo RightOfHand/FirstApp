@@ -32,7 +32,7 @@ public class FirstNativeActivity extends ReactActivity {
         tvText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(FirstNativeActivity.this,SecondActivity.class));
+                startActivity(new Intent(FirstNativeActivity.this,ToRNActivity.class));
             }
         });
         tvBack.setOnClickListener(new View.OnClickListener() {

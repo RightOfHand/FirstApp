@@ -8,9 +8,6 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import java.util.Map;
-
-import javax.annotation.Nullable;
 
 /**
  * Description:
@@ -53,7 +50,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void pickImage(String msg, Promise promise) {
         final Activity currentActivity = getCurrentActivity();
-        Log.d("ACCEPT",msg);
+        Log.d("from JS",msg);
         this.promise=promise;
         if (currentActivity == null) {
             return;
@@ -64,7 +61,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule {
         }
 
     }
-    
+
     //1.React Native的RCTDeviceEventEmitter 数据传递
     public void sendMsgToRn(String msg){
         //将消息msg发送给RN侧

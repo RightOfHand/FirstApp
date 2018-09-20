@@ -104,6 +104,7 @@ public class CircleViewManager extends SimpleViewManager<CircleView> implements 
     public void receiveCommand(CircleView root, int commandId, @Nullable ReadableArray args) {
         switch (commandId){
             case HANDLE_METHOD_ID:
+                Log.d("ACCEPT========","come here");
                 Toast.makeText(mContext,"RN层任务通知",Toast.LENGTH_LONG).show();
                 if (args!=null){
 //                    String message=args.getString(0); //获取
