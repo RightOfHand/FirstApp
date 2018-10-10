@@ -30,6 +30,8 @@ export default class UserInfoScreen extends Component<Props>{
         // 展示数据 "`" 不是单引号
         title: `${navigation.state.params.user}`,
 
+
+
     });
     lastBackPressed = 0;
     componentDidMount() {
@@ -90,16 +92,8 @@ export default class UserInfoScreen extends Component<Props>{
         const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-                {/*<View>*/}
-                    {/*<Text  style={styles.rowContainer} onPress={()=>this._update()}>*/}
-                        {/*reload update*/}
-                    {/*</Text>*/}
-                {/*</View>*/}
                 <TextImageWidget
                     title='* 头像' />
-
-                <TextImageWidget
-                    title='* 头像2' />
                 <TextInputWidget
                     title='* 昵称'
                     placeholder='请输使用您的真实姓名' />

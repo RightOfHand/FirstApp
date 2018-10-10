@@ -7,6 +7,7 @@ import {
     Text,
     View,
     Alert,
+    Image,
     AppState,
     Platform,
 } from 'react-native'
@@ -15,12 +16,15 @@ import ReactNativePermissions from './src/util/android.permission.js'
 import UserInfoScreen from "./src/screen/UserInfoScreen";
 export default class App extends Component {
     static navigationOptions = {
-        title: 'choose permission',
+        title: '权限管理列表',
         headerText:{
             textAlign: 'center',
             fontWeight: 'bold',
         },
-        gesturesEnabled:false
+
+        headerRight:{
+            text:'back'
+        }
     };
     state = {
         types: [],

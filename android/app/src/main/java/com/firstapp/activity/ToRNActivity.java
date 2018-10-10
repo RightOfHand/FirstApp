@@ -28,7 +28,7 @@ public class ToRNActivity extends MyReactActivity {
         mReactRootView = new ReactRootView(this);
         mReactInstanceManager = ReactInstanceManager.builder()
                 .setApplication(getApplication())
-                .setJSMainModulePath("DetailScreen")
+                .setJSMainModulePath("index")
                 .addPackage(new MainReactPackage())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
@@ -41,40 +41,40 @@ public class ToRNActivity extends MyReactActivity {
 
     }
 
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//        if (mReactInstanceManager!=null){
-//            mReactInstanceManager.onHostPause(this);
-//        }
-//    }
-//
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        if (mReactInstanceManager!=null){
-//            mReactInstanceManager.onHostResume(this);
-//        }
-//    }
-//
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//        if (mReactInstanceManager!=null){
-//            mReactInstanceManager.onHostDestroy(this);
-//        }
-//        if (mReactRootView!=null){
-//            mReactRootView.unmountReactApplication();
-//        }
-//    }
-//
-//    @Override
-//    public void onBackPressed() {
-//        if (mReactInstanceManager!=null){
-//            mReactInstanceManager.onBackPressed();
-//        }else {
-//            super.onBackPressed();
-//        }
-//
-//    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mReactInstanceManager!=null){
+            mReactInstanceManager.onHostPause(this);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (mReactInstanceManager!=null){
+            mReactInstanceManager.onHostResume(this);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mReactInstanceManager!=null){
+            mReactInstanceManager.onHostDestroy(this);
+        }
+        if (mReactRootView!=null){
+            mReactRootView.unmountReactApplication();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mReactInstanceManager!=null){
+            mReactInstanceManager.onBackPressed();
+        }else {
+            super.onBackPressed();
+        }
+
+    }
 }

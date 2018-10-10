@@ -1,4 +1,4 @@
-import { AppRegistry } from 'react-native';
+import { AppRegistry,Image } from 'react-native';
 import App from './App';
 import UserInfoScreen from './src/screen/UserInfoScreen';
 
@@ -7,7 +7,10 @@ import {StackNavigator} from "react-navigation";
 
 
 const AppHome = StackNavigator({
-    App: {screen: App},
+    App: {
+        screen: App,
+
+    },
     UserInfoScreen: {screen: UserInfoScreen},
 });
 
