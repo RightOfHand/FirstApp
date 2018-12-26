@@ -70,7 +70,7 @@ public class CaptureCropUtil {
 
         if (Build.VERSION.SDK_INT >= 24) {
             intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            Uri contentUri = FileProvider.getUriForFile(mActivity, "com.aicai.apps.qualitydev.fileProvider", getTempCaptureImageFile());
+            Uri contentUri = FileProvider.getUriForFile(mActivity, "com.firstapp.fileProvider", getTempCaptureImageFile());
             intent.putExtra(MediaStore.EXTRA_OUTPUT, contentUri);
         } else {
             intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(getTempCaptureImageFile()));

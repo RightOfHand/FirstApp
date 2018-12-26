@@ -183,7 +183,7 @@ public class SelectPicturePop extends PopupWindow implements View.OnClickListene
 
             if (Build.VERSION.SDK_INT >= 24) {
                 intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                Uri contentUri = FileProvider.getUriForFile(activity,"com.aicai.apps.qualitydev.fileProvider", mImagePath);
+                Uri contentUri = FileProvider.getUriForFile(activity,"com.firstapp.fileProvider", mImagePath);
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, contentUri);
             } else {
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mImagePath));
