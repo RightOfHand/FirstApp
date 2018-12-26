@@ -7,10 +7,10 @@ import {StackNavigator} from "react-navigation";
 
 
 const AppHome = StackNavigator({
-    App: {
-        screen: App,
-
-    },
+    // App: {
+    //     screen: App,
+    //
+    // },
     UserInfoScreen: {screen: UserInfoScreen},
 });
 

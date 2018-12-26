@@ -26,13 +26,11 @@ import UpdateAndroid from '../native_modules/UpdateAndroid'
 
 type Props = {};
 export default class UserInfoScreen extends Component<Props>{
-    static navigationOptions = ({navigation}) => ({
-        // 展示数据 "`" 不是单引号
-        title: `${navigation.state.params.user}`,
-
-
-
-    });
+    // static navigationOptions = ({navigation}) => ({
+    //     // 展示数据 "`" 不是单引号
+    //     title: `${navigation.state.params.user}`,
+    //
+    // });
     lastBackPressed = 0;
     componentDidMount() {
     //     if (Platform.OS === 'android') {
@@ -44,28 +42,28 @@ export default class UserInfoScreen extends Component<Props>{
     //         // BackHandler.removeEventListener('hardwareBackPress', this.onBackAndroid);
     //     }
     }
-    onBackAndroid = () => {
-        const {navigator}=this.props;
-        if (navigator!=null){
-            Alert.alert("how much"+navigator.getLength())
-        }
-        if (navigator!=null && navigator.getLength()>1){
-            navigator.pop();
-            return true;
-        }else {
-            return false;
-        }
-        const now = Date.now();
-        if (now - this.lastBackPressed < 1500) {
-            BackHandler.exitApp();
-        } else {
-            this.lastBackPressed = now;
-            ToastAndroid.show('再按一次返回键退出应用', 1000);
-        }
-
-        return true;
-
-    };
+    // onBackAndroid = () => {
+    //     const {navigator}=this.props;
+    //     if (navigator!=null){
+    //         Alert.alert("how much"+navigator.getLength())
+    //     }
+    //     if (navigator!=null && navigator.getLength()>1){
+    //         navigator.pop();
+    //         return true;
+    //     }else {
+    //         return false;
+    //     }
+    //     const now = Date.now();
+    //     if (now - this.lastBackPressed < 1500) {
+    //         BackHandler.exitApp();
+    //     } else {
+    //         this.lastBackPressed = now;
+    //         ToastAndroid.show('再按一次返回键退出应用', 1000);
+    //     }
+    //
+    //     return true;
+    //
+    // };
     constructor(props){
         super(props);
     }
@@ -89,7 +87,7 @@ export default class UserInfoScreen extends Component<Props>{
         this.circle.handleTask();
     }
     render() {
-        const { navigate } = this.props.navigation;
+        // const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
                 <TextImageWidget
